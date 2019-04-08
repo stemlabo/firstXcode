@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="02q-oO-UCs">
             <objects>
-                <viewController id="WUk-zf-c53" sceneMemberID="viewController">
+                <viewController id="WUk-zf-c53" customClass="QuizViewController" customModule="MathTraining" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zkl-9H-Cxh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,7 +82,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyh-lq-Ydb">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyh-lq-Ydb">
                                 <rect key="frame" x="51" y="313" width="91" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92757529019999996" green="0.5137540102" blue="0.31760498879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -90,8 +90,11 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedWithSender:" destination="WUk-zf-c53" eventType="touchUpInside" id="vFf-C7-6dL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7P-Dv-9ft">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7P-Dv-9ft">
                                 <rect key="frame" x="234" y="313" width="91" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92757529019999996" green="0.5137540102" blue="0.31760498879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -99,8 +102,11 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedWithSender:" destination="WUk-zf-c53" eventType="touchUpInside" id="LRz-5l-b25"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wn-oo-mPT">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wn-oo-mPT">
                                 <rect key="frame" x="51" y="458" width="91" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92757529019999996" green="0.5137540102" blue="0.31760498879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -108,8 +114,11 @@
                                 <state key="normal" title="×">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedWithSender:" destination="WUk-zf-c53" eventType="touchUpInside" id="8Rr-JV-fwT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJP-5g-0Em">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJP-5g-0Em">
                                 <rect key="frame" x="234" y="458" width="91" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92757529019999996" green="0.5137540102" blue="0.31760498879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -117,6 +126,9 @@
                                 <state key="normal" title="÷">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedWithSender:" destination="WUk-zf-c53" eventType="touchUpInside" id="KWR-Vs-JGO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ms-jp-vYV">
                                 <rect key="frame" x="87" y="142" width="62" height="64"/>
@@ -131,7 +143,10 @@
                         <viewLayoutGuide key="safeArea" id="yS9-I7-LlD"/>
                     </view>
                     <connections>
-                        <segue destination="elm-tc-BUJ" kind="presentation" id="EBL-Qt-C64"/>
+                        <outlet property="centerNumberLabel" destination="sp6-A3-AHr" id="nhO-J7-Onw"/>
+                        <outlet property="leftNumberLabel" destination="qyi-CK-Rwg" id="Uyo-Qq-ugz"/>
+                        <outlet property="rightNumberLabel" destination="i82-Os-sug" id="TW6-qf-GyP"/>
+                        <segue destination="elm-tc-BUJ" kind="presentation" identifier="Mainstoryboard" id="EBL-Qt-C64"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mq9-Wt-pZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
