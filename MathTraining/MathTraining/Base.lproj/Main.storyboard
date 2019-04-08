@@ -144,19 +144,18 @@
                     </view>
                     <connections>
                         <outlet property="centerNumberLabel" destination="sp6-A3-AHr" id="nhO-J7-Onw"/>
-                        <outlet property="leftNumberLabel" destination="qyi-CK-Rwg" id="Uyo-Qq-ugz"/>
                         <outlet property="rightNumberLabel" destination="i82-Os-sug" id="TW6-qf-GyP"/>
-                        <segue destination="elm-tc-BUJ" kind="presentation" identifier="Mainstoryboard" id="EBL-Qt-C64"/>
+                        <segue destination="elm-tc-BUJ" kind="presentation" identifier="QuizResult" id="EBL-Qt-C64"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mq9-Wt-pZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="812" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="7He-aF-xyT">
             <objects>
-                <viewController id="elm-tc-BUJ" sceneMemberID="viewController">
+                <viewController id="elm-tc-BUJ" customClass="ResultViewController" customModule="MathTraining" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3vK-Cs-COV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +182,9 @@
                                 <state key="normal" title="BACK">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="u7c-WY-m7O" kind="unwind" unwindAction="backToTitleWithSender:" id="Icl-v5-SSK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU ARE GREAT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLP-lT-Zvj">
                                 <rect key="frame" x="0.0" y="405" width="375" height="38"/>
@@ -195,8 +197,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Nl9-kz-Rbp"/>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="gLP-lT-Zvj" id="nDK-Xk-625"/>
+                        <outlet property="resultLabel" destination="zHg-Zf-iBs" id="q15-MK-uBz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yG-3P-rra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="u7c-WY-m7O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1533.5999999999999" y="133.5832083958021"/>
         </scene>

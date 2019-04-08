@@ -35,6 +35,15 @@ class QuizViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //問題画面から結果を渡す処理
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //prepareメソッドは次の画面に遷移する際に実行される。このメソッドは画面遷移を制御するsegueを引数として受け取る。segueを用いて次の画面のVIEWコントローラーにアクセス（segue.destination UIVIEWコントローラーの型をもっているが、VIEWコントローラーのサブクラスのresultVIEWコントローラーの型を持っていることを明記しなければいけない。asを用いる。認識できない場合を考え?をつける）できる。）
+        if let resultVC = segue.destination as? ResultViewController {
+            //
+            resultVC.result = Double(correct) / Double(total) * 100.0
+            //Double(correct)少数に変換したもの
+         }
+    }
     
     //演算子のボタンが押された時の処理
     

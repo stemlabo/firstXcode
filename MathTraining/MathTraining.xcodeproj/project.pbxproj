@@ -13,6 +13,7 @@
 		B70940EC225AE3B600A86CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70940EB225AE3B600A86CFF /* Assets.xcassets */; };
 		B70940EF225AE3B600A86CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70940ED225AE3B600A86CFF /* LaunchScreen.storyboard */; };
 		B70940F7225B07CA00A86CFF /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70940F6225B07CA00A86CFF /* QuizViewController.swift */; };
+		B70940F9225B1DB400A86CFF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70940F8225B1DB400A86CFF /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B70940EE225AE3B600A86CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B70940F0225AE3B600A86CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B70940F6225B07CA00A86CFF /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		B70940F8225B1DB400A86CFF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B70940E4225AE3B200A86CFF /* AppDelegate.swift */,
 				B70940E6225AE3B200A86CFF /* ViewController.swift */,
 				B70940F6225B07CA00A86CFF /* QuizViewController.swift */,
+				B70940F8225B1DB400A86CFF /* ResultViewController.swift */,
 				B70940E8225AE3B200A86CFF /* Main.storyboard */,
 				B70940EB225AE3B600A86CFF /* Assets.xcassets */,
 				B70940ED225AE3B600A86CFF /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				B70940F7225B07CA00A86CFF /* QuizViewController.swift in Sources */,
 				B70940E7225AE3B200A86CFF /* ViewController.swift in Sources */,
 				B70940E5225AE3B200A86CFF /* AppDelegate.swift in Sources */,
+				B70940F9225B1DB400A86CFF /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func backToTitle(sender: UIStoryboardSegue) {
+        //このメソッドは{}にの中に何も書かない。アンウィンドセグウェイを使いこの画面に戻ってくる目印
+    }
 }
 
