@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B70942052260E89E00A86CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70942042260E89E00A86CFF /* AppDelegate.swift */; };
+		B70942072260E89E00A86CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70942062260E89E00A86CFF /* ViewController.swift */; };
+		B709420A2260E89E00A86CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70942082260E89E00A86CFF /* Main.storyboard */; };
+		B709420C2260E8A100A86CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B709420B2260E8A100A86CFF /* Assets.xcassets */; };
+		B709420F2260E8A100A86CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B709420D2260E8A100A86CFF /* LaunchScreen.storyboard */; };
+		B709421B2260ED5000A86CFF /* fish1.png in Resources */ = {isa = PBXBuildFile; fileRef = B70942192260ED5000A86CFF /* fish1.png */; };
+		B709421C2260ED5000A86CFF /* fish2.png in Resources */ = {isa = PBXBuildFile; fileRef = B709421A2260ED5000A86CFF /* fish2.png */; };
+		B70942242260ED5800A86CFF /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B709421E2260ED5800A86CFF /* 6.mp3 */; };
+		B70942252260ED5800A86CFF /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B709421F2260ED5800A86CFF /* 4.mp3 */; };
+		B70942262260ED5800A86CFF /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B70942202260ED5800A86CFF /* 5.mp3 */; };
+		B70942272260ED5800A86CFF /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B70942212260ED5800A86CFF /* 1.mp3 */; };
+		B70942282260ED5800A86CFF /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B70942222260ED5800A86CFF /* 2.mp3 */; };
+		B70942292260ED5800A86CFF /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B70942232260ED5800A86CFF /* 3.mp3 */; };
+		B709422B2260EF3A00A86CFF /* SEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B709422A2260EF3A00A86CFF /* SEManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B70942012260E89E00A86CFF /* FishPiano-Photography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FishPiano-Photography.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70942042260E89E00A86CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B70942062260E89E00A86CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B70942092260E89E00A86CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B709420B2260E8A100A86CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B709420E2260E8A100A86CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B70942102260E8A100A86CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B70942192260ED5000A86CFF /* fish1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish1.png; sourceTree = "<group>"; };
+		B709421A2260ED5000A86CFF /* fish2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish2.png; sourceTree = "<group>"; };
+		B709421E2260ED5800A86CFF /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
+		B709421F2260ED5800A86CFF /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
+		B70942202260ED5800A86CFF /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
+		B70942212260ED5800A86CFF /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		B70942222260ED5800A86CFF /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		B70942232260ED5800A86CFF /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
+		B709422A2260EF3A00A86CFF /* SEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B70941FE2260E89E00A86CFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B70941F82260E89E00A86CFF = {
+			isa = PBXGroup;
+			children = (
+				B70942032260E89E00A86CFF /* FishPiano-Photography */,
+				B70942022260E89E00A86CFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B70942022260E89E00A86CFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B70942012260E89E00A86CFF /* FishPiano-Photography.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B70942032260E89E00A86CFF /* FishPiano-Photography */ = {
+			isa = PBXGroup;
+			children = (
+				B709421D2260ED5800A86CFF /* Sound */,
+				B70942182260ED5000A86CFF /* Images */,
+				B70942042260E89E00A86CFF /* AppDelegate.swift */,
+				B70942062260E89E00A86CFF /* ViewController.swift */,
+				B70942082260E89E00A86CFF /* Main.storyboard */,
+				B709422A2260EF3A00A86CFF /* SEManager.swift */,
+				B709420B2260E8A100A86CFF /* Assets.xcassets */,
+				B709420D2260E8A100A86CFF /* LaunchScreen.storyboard */,
+				B70942102260E8A100A86CFF /* Info.plist */,
+			);
+			path = "FishPiano-Photography";
+			sourceTree = "<group>";
+		};
+		B70942182260ED5000A86CFF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B70942192260ED5000A86CFF /* fish1.png */,
+				B709421A2260ED5000A86CFF /* fish2.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		B709421D2260ED5800A86CFF /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				B709421E2260ED5800A86CFF /* 6.mp3 */,
+				B709421F2260ED5800A86CFF /* 4.mp3 */,
+				B70942202260ED5800A86CFF /* 5.mp3 */,
+				B70942212260ED5800A86CFF /* 1.mp3 */,
+				B70942222260ED5800A86CFF /* 2.mp3 */,
+				B70942232260ED5800A86CFF /* 3.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B70942002260E89E00A86CFF /* FishPiano-Photography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70942132260E8A100A86CFF /* Build configuration list for PBXNativeTarget "FishPiano-Photography" */;
+			buildPhases = (
+				B70941FD2260E89E00A86CFF /* Sources */,
+				B70941FE2260E89E00A86CFF /* Frameworks */,
+				B70941FF2260E89E00A86CFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FishPiano-Photography";
+			productName = "FishPiano-Photography";
+			productReference = B70942012260E89E00A86CFF /* FishPiano-Photography.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B70941F92260E89E00A86CFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = kyosukenakashima;
+				TargetAttributes = {
+					B70942002260E89E00A86CFF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = B70941FC2260E89E00A86CFF /* Build configuration list for PBXProject "FishPiano-Photography" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B70941F82260E89E00A86CFF;
+			productRefGroup = B70942022260E89E00A86CFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B70942002260E89E00A86CFF /* FishPiano-Photography */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B70941FF2260E89E00A86CFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70942292260ED5800A86CFF /* 3.mp3 in Resources */,
+				B70942272260ED5800A86CFF /* 1.mp3 in Resources */,
+				B70942262260ED5800A86CFF /* 5.mp3 in Resources */,
+				B709420F2260E8A100A86CFF /* LaunchScreen.storyboard in Resources */,
+				B709421C2260ED5000A86CFF /* fish2.png in Resources */,
+				B709420C2260E8A100A86CFF /* Assets.xcassets in Resources */,
+				B70942242260ED5800A86CFF /* 6.mp3 in Resources */,
+				B70942252260ED5800A86CFF /* 4.mp3 in Resources */,
+				B70942282260ED5800A86CFF /* 2.mp3 in Resources */,
+				B709420A2260E89E00A86CFF /* Main.storyboard in Resources */,
+				B709421B2260ED5000A86CFF /* fish1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B70941FD2260E89E00A86CFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B709422B2260EF3A00A86CFF /* SEManager.swift in Sources */,
+				B70942072260E89E00A86CFF /* ViewController.swift in Sources */,
+				B70942052260E89E00A86CFF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B70942082260E89E00A86CFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B70942092260E89E00A86CFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B709420D2260E8A100A86CFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B709420E2260E8A100A86CFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B70942112260E8A100A86CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B70942122260E8A100A86CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B70942142260E8A100A86CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FishPiano-Photography/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kyosukenakashima.FishPiano-Photography";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B70942152260E8A100A86CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FishPiano-Photography/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kyosukenakashima.FishPiano-Photography";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B70941FC2260E89E00A86CFF /* Build configuration list for PBXProject "FishPiano-Photography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70942112260E8A100A86CFF /* Debug */,
+				B70942122260E8A100A86CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70942132260E8A100A86CFF /* Build configuration list for PBXNativeTarget "FishPiano-Photography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70942142260E8A100A86CFF /* Debug */,
+				B70942152260E8A100A86CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B70941F92260E89E00A86CFF /* Project object */;
+}
