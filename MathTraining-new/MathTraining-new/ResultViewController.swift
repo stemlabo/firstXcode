@@ -19,6 +19,9 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var int:Int = Int(result)
+        resultLabel.text = String(int) + "%"
+        
         
         if result < 50 {
             messageLabel.text = "PLEASE TRY AGAIN!"
