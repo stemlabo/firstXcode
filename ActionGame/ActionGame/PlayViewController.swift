@@ -24,7 +24,7 @@ class PlayViewController: UIViewController {
        //    得点入るまでの間隔
     var enemyCount = 0
 //    敵が出現するまでカウントされる
-    let enemyInterval = 60
+   var enemyInterval = 60
            //    敵が出現するまでの間隔
     var enemyArray = [Enemy]()
 //    敵を格納する配列
@@ -115,11 +115,17 @@ class PlayViewController: UIViewController {
 //            enemyArrayのにenemyを追加
             enemyCount = 0
 //            ０にリセット
+// 敵の出現間隔を短くする
+            enemyInterval = Int(Double(enemyInterval) * 0.9)
+            if enemyInterval < 20 {
+                enemyInterval = 20
+            }
         }else{
             enemyCount += 1
 //            enemyCount < enemyIntervalの場合増加させる
         }
         
+    
 // スコア
         if scoreCount >= scroreInteval {
             score += 1
