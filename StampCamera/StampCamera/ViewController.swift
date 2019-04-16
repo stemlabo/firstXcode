@@ -10,6 +10,8 @@
 import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, StampSelectViewControllerDelegate {
+    //vUINavigationControllerDelegate, UIImagePickerControllerDelegateはカメラやフォトライブラリーを制御
+    //    StampSelectViewControllerDelegateはスタンプ選択画面からスタンプを受け取ってStampBaseViewに表示
     
     @IBOutlet var stampBaseView: StampBaseView!
     
@@ -27,30 +29,40 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         if let stampSelectVC = segue.destination as? StampSelectViewController{
             stampSelectVC.delegate = self
         }
+        //        次の画面にデリゲートを渡す。
     }
     
     @IBAction func cameraTapped(sender: UIButton) {
         showSourceSelection()
+        //        カメラをタップした際に
     }
     
     @IBAction func stampTapped(sender: UIButton) {
         performSegue(withIdentifier: "MainToStamp", sender: nil)
     }
+    //    スタンプ一覧画面への遷移
     
+    //    プラスボタボタンをおすと
     @IBAction func deleteTapped(sender: UIButton) {
         stampBaseView.deleteStamp()
     }
+    //    ゴミ箱ボタン
     
     @IBAction func saveTapped(sender: UIButton) {
         confirmSave()
     }
     
+    //    保存　confirmSave()で確認
+    
     func showSourceSelection() {
         let alert = UIAlertController(title:"写真を選択", message: "ソースを選んでください", preferredStyle: .alert)
+        //        タイトルとメッセージを指定した上でアラートを設定
         
         let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: {
             (action: UIAlertAction!) in
             self.pickImage(sourceType: .camera)
+            //           handlerとは選択時に行う処理
+            //            pickImage を実行Photo Libraryを指定
         })
         
         let libraryAction = UIAlertAction(title: "Photo Library", style: .default, handler: {
@@ -69,25 +81,33 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         self.present(alert, animated: true, completion: nil)
     }
+    //    アラートが画面に表示される
     
     func pickImage(sourceType: UIImagePickerControllerSourceType){
         if UIImagePickerController.isSourceTypeAvailable(sourceType){
             let picker = UIImagePickerController()
+            //            UIImagePickerControllerのインスタンスを生成
             picker.sourceType = sourceType
             picker.delegate = self
             self.present(picker, animated: true, completion: nil)
+            //    画面に結果を表示させる
         }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        //        info:に画像の情報が入っている
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            //            UIImagePickerControllerOriginalImageというキーを指定してUIImage型の画像を取得
             stampBaseView.setBackgroundImage(image: pickedImage)
+            //            スタンプビューの背景画像を設定
         }
         
         picker.dismiss(animated: true, completion: nil)
+        //pickerを閉じる
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        //imagePickerがキャンセルされた際に実行される
         picker.dismiss(animated: true, completion: nil)
     }
     
@@ -97,11 +117,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         let saveAction = UIAlertAction(title: "保存", style: .default, handler: {
             (action: UIAlertAction!) in
             self.stampBaseView.saveImageWithStamps()
+            //            結合されたものが保存される
         })
         
         let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: {
             (action: UIAlertAction!) in
             print("Save canceled")
+            
         })
         
         alert.addAction(saveAction)
