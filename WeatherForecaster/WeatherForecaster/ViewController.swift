@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return forecasts.count
-//        numberOfRowsInSectionでTableViewのえセルの数を決める
+//        numberOfRowsInSectionでTableViewのセルの数を決める
 //forecastsの要素の数とする
     }
     

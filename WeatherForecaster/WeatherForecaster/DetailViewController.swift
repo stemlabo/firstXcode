@@ -17,6 +17,10 @@ class DetailViewController: UIViewController {
     @IBOutlet var iconLabel:UILabel!
     @IBOutlet var weatherLabel:UILabel!
     @IBOutlet var descLabel:UILabel!
+    
+    @IBOutlet var pressureLabel: UILabel!
+    @IBOutlet var humidityLabel: UILabel!
+    
 //    説明を表示するラベル
     @IBOutlet var tempLabel:UILabel!
     
@@ -29,7 +33,10 @@ class DetailViewController: UIViewController {
         weatherLabel.text = forecast?.getMain()
         descLabel.text = forecast?.getDescription()
         tempLabel.text = forecast?.getFormattedTemp()
+        pressureLabel.text = forecast?.getFormattedPressure()
+        humidityLabel.text = forecast?.getFormattedHumidity()
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

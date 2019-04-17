@@ -31,7 +31,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETY-eB-pBY">
-                                                    <rect key="frame" x="26" y="23" width="209" height="21"/>
+                                                    <rect key="frame" x="26" y="22" width="187" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -90,7 +90,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sco-xY-UM0" userLabel="Temp Label">
-                                <rect key="frame" x="144" y="570" width="87" height="46"/>
+                                <rect key="frame" x="144" y="523" width="87" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -104,8 +104,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qad-XO-sQF" userLabel="Desc Label">
-                                <rect key="frame" x="0.0" y="494" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="483" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DG-ZH-R2h" userLabel="Humidity Label">
+                                <rect key="frame" x="166" y="577" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000hPa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="had-yl-AQQ" userLabel="Pressure Label">
+                                <rect key="frame" x="153" y="626" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -117,7 +131,9 @@
                     <connections>
                         <outlet property="dateLabel" destination="dRZ-CT-Ejz" id="4xR-Rx-LqO"/>
                         <outlet property="descLabel" destination="Qad-XO-sQF" id="6CP-Vb-SNU"/>
+                        <outlet property="humidityLabel" destination="4DG-ZH-R2h" id="V5c-TU-rZA"/>
                         <outlet property="iconLabel" destination="ufH-Cl-TQD" id="hw9-ez-Kx5"/>
+                        <outlet property="pressureLabel" destination="had-yl-AQQ" id="8cW-or-W0O"/>
                         <outlet property="tempLabel" destination="sco-xY-UM0" id="9m8-qB-vsI"/>
                         <outlet property="weatherLabel" destination="Oak-iK-ifR" id="n2I-sE-tKG"/>
                     </connections>

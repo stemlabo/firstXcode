@@ -58,6 +58,8 @@ struct Forecast: Codable {
     
     struct Main: Codable {
         var temp: Double
+        var pressure: Double
+        var humidity: Int
     }
     
     struct Weather: Codable {
@@ -65,6 +67,17 @@ struct Forecast: Codable {
         var id: Int
         var main: String
     }
+    
+    //課題追加　気圧と湿度
+    func getFormattedPressure() -> String{
+        return String(format: "%.2f hPa", main.pressure)
+    }
+    
+    func getFormattedHumidity() -> String{
+        return String(format: "Humidity: %d ％", main.humidity)
+    }
+    
+    
     
     func getFormattedTemp() -> String{
         return String(format: "%.1f ℃", main.temp)
