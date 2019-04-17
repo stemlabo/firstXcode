@@ -83,7 +83,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     }
     //    アラートが画面に表示される
     
-    func pickImage(sourceType: UIImagePickerControllerSourceType){
+    func pickImage(sourceType: UIImagePickerController.SourceType){
         if UIImagePickerController.isSourceTypeAvailable(sourceType){
             let picker = UIImagePickerController()
             //            UIImagePickerControllerのインスタンスを生成

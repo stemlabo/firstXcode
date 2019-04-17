@@ -41,11 +41,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>カメラの使用を許可しますか？</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>フォトライブラリの使用を許可しますか？</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>フォトライブラリへの保存を許可しますか？</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

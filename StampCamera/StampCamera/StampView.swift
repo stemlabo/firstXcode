@@ -12,8 +12,9 @@ class StampView: UIImageView {
     //UIImageViewを継承
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.superview?.bringSubview(toFront: self)
+        self.superview?.bringSubviewToFront( self)
     }
+    
     //    touchesBeganの中(でsuperview?.bringSubviewメソッドが実装されている。
     //    selfスタンプのビューを一番上のビューにおいて一番手前に持ってくる
     //    スタンプをタップしたタイミングでそのスタンプが画面の一番手前に表示される
