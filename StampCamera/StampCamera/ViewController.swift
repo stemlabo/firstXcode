@@ -93,11 +93,16 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             //    画面に結果を表示させる
         }
     }
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         //        info:に画像の情報が入っている
-        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            //            UIImagePickerControllerOriginalImageというキーを指定してUIImage型の画像を取得
+        if let pickedImage = info[.originalImage] as? UIImage {
+
+//  下エラー＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+//        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+//            UIImagePickerControllerOriginalImageというキーを指定してUIImage型の画像を取得
+            
+            
             stampBaseView.setBackgroundImage(image: pickedImage)
             //            スタンプビューの背景画像を設定
         }
